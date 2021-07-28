@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400&display=swap");
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+}
+
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 0 30px;
+}
+
+h1,
+p {
+	margin: 0;
+}
+
+header {
+	background-color: #6505fc;
+	background-image: url(/images/header-bg.svg);
+	height: 100vh;
+	color: #fff;
+}
+
+.header-grp,
+.header-contact {
+	display: flex;
+	justify-content: space-around;
+}
+
+.header-grp {
+	align-items: center;
+}
+
+.header-title h1 {
+	font-size: 70px;
+	font-family: "Lobster", cursive;
+}
+
+.header-title p {
+	font-size: 24px;
+	font-weight: 300;
+	text-align: right;
+}
+
+.header-contact {
+	width: 200px;
+	height: 100%;
+	margin-bottom: 350px;
+	align-items: flex-end;
+}
+
+.header-contact i {
+	font-size: 40px;
+}
+
+@media only screen and (max-width: 760px) {
+	.header-grp {
+		justify-content: center;
+	}
+
+	.header-title {
+		margin-bottom: 20px;
+	}
+
+	.header-contact {
+		height: fit-content;
+		margin-bottom: 0;
+	}
+
+	.header-grp {
+		flex-direction: column;
+	}
+}
