@@ -15,8 +15,8 @@ body {
 }
 
 .container {
-	/* max-width: 1200px; */
-	max-width: 1400px;
+	max-width: 1200px;
+	/* max-width: 1400px; */
 	margin: 0 auto;
 	height: 100%;
 }
@@ -167,6 +167,68 @@ header {
 
 .about-me .education .education-card p {
 	padding: 20px;
+}
+
+/* WORK */
+.work {
+	padding: 80px 30px 30px;
+}
+
+.work h2 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.work .work-items {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.work .work-items .work-item {
+	text-align: center;
+	margin: 30px;
+	min-width: 300px;
+	height: 300px;
+	background-color: #fff;
+	border: 1px solid #6505fc;
+	border-radius: 10px;
+	position: relative;
+	background-size: cover;
+}
+
+.work .work-items .work-item h3 {
+	position: absolute;
+	top: 46px;
+	left: 10px;
+	z-index: 1;
+}
+
+.work .work-items .work-item::before {
+	content: " ";
+	width: 50px;
+	height: 40px;
+	background-color: #5603db;
+	position: absolute;
+	top: 28px;
+	left: -13px;
+	transform: rotate(-25deg);
+	z-index: -1;
+}
+
+.work .work-items .work-item::after {
+	content: " ";
+	width: 280px;
+	height: 40px;
+	background-color: #6505fc;
+	position: absolute;
+	top: 40px;
+	left: -20px;
+	border-radius: 4px 3px 3px 4px;
+}
+
+.work .work-items .work-item:nth-of-type(1) {
+	background-image: url(/images/blizz-clone.jpg);
 }
 
 /* Media Queries */
