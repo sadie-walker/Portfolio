@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="container header-grp">
+        <div class="header-grp container">
             <div class="header-title">
                 <h1>Sadie Walker</h1>
                 <p>Junior Web Developer</p>
@@ -38,7 +38,11 @@
                     <img class="skate-svg" src="/images/skate.svg" alt="roller skate">
                 </div>
                 <div class="tech">
-                    <img src="/images/hex-line.svg" alt="HTML, CSS, JAVASCRIPT, GIT, SASS, BOOTSTRAP">
+                    <img src="/images/hex-line.svg"
+                        srcset="/images/hex-line.svg 300w,
+                                /images/hex-line-mobile.svg 150w" 
+                        sizes="(max-width: 760px) 150px, 300px"  
+                        alt="HTML, CSS, JAVASCRIPT, GIT, SASS, BOOTSTRAP">
                 </div>
                 <div class="education">
                     <div class="education-card">

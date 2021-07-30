@@ -8,15 +8,17 @@
 }
 
 body {
-	background-color: #1e1e1e;
+	/* background-color: #1e1e1e; */
+	background: url(/images/bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .container {
-	/* max-width: 1600px; */
-	max-width: 1200px;
+	/* max-width: 1200px; */
+	max-width: 1400px;
 	margin: 0 auto;
 	height: 100%;
-	padding: 30px;
 }
 
 h1,
@@ -28,8 +30,7 @@ h1,
 h2,
 h3,
 h4,
-p {
-	margin: 0;
+a {
 	color: #fff;
 }
 
@@ -47,18 +48,22 @@ header {
 	height: 100vh;
 	color: #fff;
 	padding: 30px 0;
-	background-image: url(/images/header-bg.svg);
-	background-color: #6505fc;
-}
-
-.header-grp,
-.header-contact {
 	display: flex;
-	justify-content: space-around;
+	align-items: center;
 }
 
 .header-grp {
-	align-items: center;
+	width: 100%;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.header-title {
+	padding: 10px;
+	margin-bottom: 20px;
 }
 
 .header-title h1 {
@@ -68,37 +73,40 @@ header {
 .header-title p {
 	font-size: 24px;
 	font-weight: 300;
-	text-align: right;
 	margin-top: -20px;
+	margin-left: 140px;
 }
 
 .header-contact {
-	width: 200px;
-	height: 100%;
-	align-items: flex-end;
+	display: flex;
+	justify-content: space-evenly;
+	justify-content: flex-start;
+	margin-left: 110px;
 }
 
 .header-contact i {
-	font-size: 40px;
+	font-size: 30px;
+	margin-right: 20px;
 }
 
 /* ABOUT */
 .about-me {
 	text-align: center;
+	padding: 80px 30px 30px;
 }
 
 .about-me h2 {
 	padding: 20px 0;
-	margin-top: 10px;
+	padding-top: 10px;
 }
 
 .about-me .overview {
-	border: 2px solid #fff;
+	background: #fff;
+	border: 2px solid #6505fc;
 	border-radius: 10px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	/* max-width: 1200px; */
 	margin: 0 auto;
 	position: relative;
 }
@@ -114,7 +122,7 @@ header {
 .about-me .overview .overview-img .profile-img {
 	width: 200px;
 	height: 200px;
-	border: 2px solid #fff;
+	border: 2px solid #6505fc;
 	border-radius: 50%;
 	margin: 10px;
 	object-fit: cover;
@@ -139,25 +147,21 @@ header {
 	max-width: 900px;
 }
 
-.about-me .tech ul {
-	position: absolute;
-	top: 50%;
-}
-
 .about-me .education {
 	display: flex;
 	justify-content: space-around;
 }
 
 .about-me .education .education-card {
-	max-width: 500px;
+	flex-basis: 45%;
 	border: 2px solid#fff;
+	background-color: #fff;
 	border-radius: 5px;
 }
 
 .about-me .education .education-card h3 {
-	border-bottom: 1px solid#fff;
 	background-color: #6505fc;
+	border-bottom: 2px solid #6006f1;
 	padding: 20px;
 }
 
@@ -168,20 +172,7 @@ header {
 /* Media Queries */
 @media only screen and (max-width: 760px) {
 	.header-grp {
-		justify-content: center;
-	}
-
-	.header-title {
-		margin-bottom: 20px;
-	}
-
-	.header-contact {
-		height: fit-content;
-		margin-bottom: 0;
-	}
-
-	.header-grp {
-		flex-direction: column;
+		align-items: center;
 	}
 
 	.about-me .overview {
@@ -191,6 +182,10 @@ header {
 	.about-me .overview .overview-img {
 		width: 100%;
 		background-color: #6505fc;
+	}
+
+	.about-me .tech img {
+		max-height: 400px;
 	}
 
 	.about-me .education {
