@@ -8,7 +8,6 @@
 }
 
 body {
-	/* background-color: #1e1e1e; */
 	background: url(/images/bg.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -43,6 +42,10 @@ li {
 	list-style-type: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 /* HEADER */
 header {
 	height: 100vh;
@@ -63,7 +66,7 @@ header {
 
 .header-title {
 	padding: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .header-title h1 {
@@ -73,7 +76,7 @@ header {
 .header-title p {
 	font-size: 24px;
 	font-weight: 300;
-	margin-top: -20px;
+	margin-top: -15px;
 	margin-left: 140px;
 }
 
@@ -165,6 +168,11 @@ header {
 	padding: 20px;
 }
 
+.about-me .education .education-card h3 i {
+	font-size: 25px;
+	margin-right: 10px;
+}
+
 .about-me .education .education-card p {
 	padding: 20px;
 }
@@ -188,20 +196,41 @@ header {
 .work .work-items .work-item {
 	text-align: center;
 	margin: 30px;
-	min-width: 300px;
 	height: 300px;
+	width: 300px;
 	background-color: #fff;
 	border: 1px solid #6505fc;
 	border-radius: 10px;
 	position: relative;
 	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 20px;
 }
 
 .work .work-items .work-item h3 {
 	position: absolute;
 	top: 46px;
 	left: 10px;
-	z-index: 1;
+	z-index: 3;
+}
+
+.work .work-items .work-item .work-item-content {
+	display: none;
+	z-index: 2;
+	position: relative;
+}
+
+.work .work-items .work-item .work-item-content p {
+	margin-bottom: 20px;
+}
+
+.work .work-items .work-item .work-item-content .work-item-btns a {
+	padding: 5px 30px;
+	border: 0.2px solid #6505fc;
+	border-radius: 4px;
+	background: none;
 }
 
 .work .work-items .work-item::before {
@@ -225,10 +254,37 @@ header {
 	top: 40px;
 	left: -20px;
 	border-radius: 4px 3px 3px 4px;
+	transition: width 0.5s 0.4s ease;
+	transition: left 0.1s ease;
+	z-index: 2;
 }
 
 .work .work-items .work-item:nth-of-type(1) {
 	background-image: url(/images/blizz-clone.jpg);
+}
+
+.work .work-items .work-item:hover::before{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.8);
+	transform: rotate(0deg);
+	z-index: 1;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+}
+
+.work .work-items .work-item:hover::after {
+	width: 300px;
+	left: -1px;
+	border-radius: 0;
+}
+
+.work .work-items .work-item:hover .work-item-content {
+	display: block;
+	color: #fff;
 }
 
 /* Media Queries */
