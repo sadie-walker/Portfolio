@@ -84,14 +84,14 @@
                 <h2>get in touch</h2>
                 <div class="contact-content">
                     <p>If you have a spare moment, feedback on my work is always greatly appreciated!</p>
-                    <form action="">
+                    <form name="contact" method="POST" data-netlify="true">
                         <div class="form-input-name">
-                            <input type="text" placeholder="First Name">
-                            <input type="text" placeholder="Last Name">
+                            <input name="first-name" type="text" placeholder="First Name">
+                            <input name="last-name" type="text" placeholder="Last Name">
                         </div>
-                        <input type="email" placeholder="Email">
+                        <input name="email" type="email" placeholder="Email">
                         <input type="text" placeholder="Subject">
-                        <textarea name="" id="" cols="40" rows="10" placeholder="Enter message here..."></textarea>
+                        <textarea name="message" cols="40" rows="10" placeholder="Enter message here..."></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
