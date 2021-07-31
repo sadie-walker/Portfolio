@@ -36,6 +36,7 @@ a {
 h2 {
 	font-size: 40px;
 	text-align: left;
+	padding: 20px 0;
 }
 
 li {
@@ -96,11 +97,6 @@ header {
 .about-me {
 	text-align: center;
 	padding: 80px 30px 30px;
-}
-
-.about-me h2 {
-	padding: 20px 0;
-	padding-top: 10px;
 }
 
 .about-me .overview {
@@ -183,7 +179,6 @@ header {
 }
 
 .work h2 {
-	margin-bottom: 10px;
 	text-align: center;
 }
 
@@ -263,12 +258,12 @@ header {
 	background-image: url(/images/blizz-clone.jpg);
 }
 
-.work .work-items .work-item:hover::before{
+.work .work-items .work-item:hover::before {
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(0,0,0,0.8);
+	background: rgba(0, 0, 0, 0.8);
 	transform: rotate(0deg);
 	z-index: 1;
 	width: inherit;
@@ -285,6 +280,79 @@ header {
 .work .work-items .work-item:hover .work-item-content {
 	display: block;
 	color: #fff;
+}
+
+/* CONTACT */
+.contact {
+	padding: 30px;
+	color: #fff;
+}
+
+.contact h2 {
+	text-align: center;
+}
+
+.contact p {
+	margin-bottom: 10px;
+}
+
+.contact-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact .contact-content form {
+	display: flex;
+	flex-direction: column;
+	border-radius: 3px;
+	background-color: #fff;
+	padding: 25px 15px;
+	width: 600px;
+}
+
+::placeholder {
+	color: #fff;
+	opacity: 0.9;
+}
+
+input:-webkit-autofill {
+	box-shadow: 0 0 0 30px #6505fc inset;
+	-webkit-box-shadow: 0 0 0 30px #6505fc inset;
+	-webkit-text-fill-color: #fff;
+}
+
+.contact .contact-content form input,
+.contact .contact-content form textarea {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #6505fc;
+	color: #fff;
+	border-radius: 2px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+}
+
+.contact .contact-content form .form-input-name {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact .contact-content form .form-input-name > * {
+	flex-basis: 48%;
+}
+
+.contact .contact-content form button {
+	padding: 10px;
+	background: none;
+	border: 2px solid #6505fc;
+	border-radius: 4px;
+	color: #6505fc;
+	font-size: 14px;
+	font-weight: 800;
+	cursor: pointer;
 }
 
 /* Media Queries */
