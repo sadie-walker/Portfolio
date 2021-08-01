@@ -15,7 +15,6 @@ body {
 
 .container {
 	max-width: 1200px;
-	/* max-width: 1400px; */
 	margin: 0 auto;
 	height: 100%;
 }
@@ -294,6 +293,7 @@ header {
 
 .contact p {
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 .contact-content {
@@ -307,8 +307,9 @@ header {
 	flex-direction: column;
 	border-radius: 3px;
 	background-color: #fff;
-	padding: 25px 15px;
-	width: 600px;
+	padding: 20px 15px;
+	width: 60%;
+	min-width: 400px;
 }
 
 ::placeholder {
@@ -332,6 +333,12 @@ input:-webkit-autofill {
 	border: none;
 	outline: none;
 	font-size: 14px;
+}
+
+.contact .contact-content form textarea {
+	resize: vertical;
+	width: 100%;
+	min-height: 60px;
 }
 
 .contact .contact-content form .form-input-name {
