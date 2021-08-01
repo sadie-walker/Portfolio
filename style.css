@@ -11,6 +11,7 @@ body {
 	background: url(/images/bg.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center center;
 }
 
 .container {
@@ -83,7 +84,6 @@ header {
 .header-contact {
 	display: flex;
 	justify-content: space-evenly;
-	justify-content: flex-start;
 	margin-left: 110px;
 }
 
@@ -378,10 +378,6 @@ input:-webkit-autofill {
 
 /* Media Queries */
 @media only screen and (max-width: 760px) {
-	.header-grp {
-		align-items: center;
-	}
-
 	.about-me .overview {
 		flex-direction: column;
 	}
