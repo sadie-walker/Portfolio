@@ -90,6 +90,11 @@ header {
 .header-contact i {
 	font-size: 30px;
 	margin-right: 20px;
+	cursor: pointer;
+}
+
+.header-contact i:hover {
+	transform: scale(1.2);
 }
 
 /* ABOUT */
@@ -281,6 +286,10 @@ header {
 	color: #fff;
 }
 
+.work .work-items .work-item .work-item-content .work-item-btns a:hover {
+	background-color: #6505fc;
+}
+
 /* CONTACT */
 .contact {
 	padding: 30px;
@@ -360,6 +369,11 @@ input:-webkit-autofill {
 	font-size: 14px;
 	font-weight: 800;
 	cursor: pointer;
+}
+
+.contact .contact-content form button:hover {
+	background-color: #6505fc;
+	color: #fff;
 }
 
 /* Media Queries */
