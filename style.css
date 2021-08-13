@@ -263,11 +263,11 @@ header {
 }
 
 .work .work-items .work-item:nth-of-type(2) {
-	background-image: url(/images/movie-watchlist.JPG);
-	background-position: center bottom;
+	background-image: url(/images/film-watchlist.JPG);
+	background-position: center top;
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-color: #454851;
+	background-color: #0e2a47;
 }
 
 .work .work-items .work-item:hover::before {
