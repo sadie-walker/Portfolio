@@ -1,102 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Sadie Walker | Portfolio</title>
-</head>
-<body>
-    <header>
-        <div class="header-grp container">
-            <div class="header-title">
-                <h1>Sadie Walker</h1>
-                <p>Junior Web Developer</p>
-            </div>
-            <div class="header-contact">
-                <a href="https://github.com/sadie-walker" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/sadiewalker313/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:sadiewalker31@gamil.com" target="_blank"><i class="far fa-envelope"></i></a>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <section class="about-me">
-                <h2>about me</h2>
-                <div class="overview">
-                    <div class="overview-img">
-                        <img class="profile-img" src="/images/profile-pic.jpg" alt="profile picture">
-                    </div>
-                    <div class="overview-text">
-                            <p>Hi, I'm a junior web developer looking for an opportunity to learn and grow within a professional environment. I have a degree in Computer Games Technology, but am self-taught in web development!
-                            </p>
-                            <p>In my free time I enjoy playing video games and hitting other gals on roller skates - also known as roller derby.</p>
-                    </div>
-                    <img class="skate-svg" src="/images/skate.svg" alt="roller skate">
-                </div>
-                <div class="tech">
-                    <img src="/images/hex-line.svg"
-                        srcset="/images/hex-line.svg 300w,
-                                /images/hex-line-mobile.svg 150w" 
-                        sizes="(max-width: 760px) 150px, 300px"  
-                        alt="HTML, CSS, JAVASCRIPT, GIT, SASS, BOOTSTRAP">
-                </div>
-                <div class="education">
-                    <div class="education-card">
-                        <h3><i class="fas fa-graduation-cap"></i> BSc Computer Games Technology (1st)</h3>
-                        <p>In 2017 I graduated from Manchester Metropolitan University with a first in computer games technology. During my degree we learnt a wide range of topics including; Web Development, Computer Games Design, 3D Modelling and Programming. Although I ultimately decided against a career in games development, university definitely instilled in me the ability to research and learn self sufficiently.</p>
-                    </div>
-                    <div class="education-card">
-                        <h3><i class="far fa-lightbulb"></i> Self-taught</h4>
-                        <p>My university course only covered the basics of HTML and CSS, so using those foundations I taught myself through research and tutorials expanding on my knowledge and putting them into practise. Going forwards I think this would help with learning new technologies as I have proven that I am capable of putting in the time and dedication to expand my knowledge and progress.</p>
-                    </div>
-                </div>
-            </section>
-            <section id="work" class="work">
-                <h2>my work</h2>
-                <ul class="work-items">
-                    <li class="work-item" onclick="">
-                        <h3>Blizzard Clone</h3>
-                        <div class="work-item-content">
-                            <p>A clone of the Activison Blizzard website - using HTML, CSS and JavaScript.</p>
-                            <div class="work-item-btns">
-                                <a href="https://blizzard-clone.netlify.app" target="_blank">Live</a>
-                                <a href="https://github.com/sadie-walker/Blizzard_Clone" target="_blank">Github</a>                            
-                            </div>
-                        </div>
-                    </li>
-                    <li class="work-item" onclick="">
-                        <h3>Film Watchlist</h3>
-                        <div class="work-item-content">
-                            <p>A watchlist creator for current and existing films, using The Movie Databse API. Created using HTML, BootStrap & JavaScript</p>
-                            <div class="work-item-btns">
-                                <a href="https://film-watchlist.netlify.app/" target="_blank">Live</a>
-                                <a href="https://github.com/sadie-walker/Film_Watchlist" target="_blank">Github</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <section class="contact">
-                <h2>get in touch</h2>
-                <div class="contact-content">
-                    <p>If you have a spare moment, feedback on my work is always greatly appreciated!</p>
-                    <form name="contact" method="POST" data-netlify="true">
-                        <div class="form-input-name">
-                            <input name="first-name" type="text" placeholder="First Name" required>
-                            <input name="last-name" type="text" placeholder="Last Name">
-                        </div>
-                        <input name="email" type="email" placeholder="Email">
-                        <input type="text" placeholder="Subject">
-                        <textarea name="message" cols="40" rows="10" placeholder="Enter message here..." required></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-            </section>
-        </div>
-    </main>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="./images/favicon.png"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+			integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Sadie Walker | Portfolio</title>
+	</head>
+	<body>
+		<header id="home" class="landing-page">
+			<p>Junior Web Developer</p>
+			<h1>Sadie Walker</h1>
+			<div class="landing-page-btns">
+				<a href="#contact">Get it touch</a>
+				<a href="./docs/SadieWalker_CV.pdf" download="Sadie-Walker_CV"
+					>Download CV</a
+				>
+			</div>
+			<div class="header-contact">
+				<a
+					href="https://github.com/sadie-walker"
+					target="_blank"
+					rel="noopener"
+					><i class="fab fa-github"></i
+				></a>
+				<a
+					href="https://www.linkedin.com/in/sadiewalker313/"
+					target="_blank"
+					rel="noopener"
+					><i class="fab fa-linkedin-in"></i
+				></a>
+				<a
+					href="mailto:sadiewalker31@gamil.com"
+					target="_blank"
+					rel="noopener"
+					><i class="far fa-envelope"></i
+				></a>
+			</div>
+			<a href="#about" class="scroll-arrow">
+				<i class="fas fa-chevron-down"></i>
+			</a>
+		</header>
+		<nav class="main-nav">
+			<ul class="main-nav-links">
+				<li class="main-nav-link"><a href="#home">home</a></li>
+				<li class="main-nav-link"><a href="#about">about</a></li>
+				<li class="main-nav-link"><a href="#work">work</a></li>
+				<li class="main-nav-link"><a href="#contact">contact</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section id="about" class="intro">
+				<div class="intro-img">
+					<img
+						src="./images/overview-img.svg"
+						alt="girl sitting in armchair with laptop"
+					/>
+				</div>
+				<div class="intro-text">
+					<p>
+						<span>Hi there,</span> I am a
+						<span>junior web developer</span> looking for an
+						oppurtunity to create stunning websites while learning
+						new skills and tech.
+					</p>
+					<p>
+						In my spare time I play a wonderful sport called Roller
+						Derby and enjoy playing video games.
+					</p>
+				</div>
+			</section>
+			<div class="quote">
+				<blockquote>
+					<p>do or do not, there is no try</p>
+					<footer>-Yoda</footer>
+				</blockquote>
+			</div>
+			<section class="tech container">
+				<h2>tech</h2>
+				<p class="lead">
+					I am always happy and willing to dedicate the time to
+					learning new technologies!
+				</p>
+				<div class="tech-grps">
+					<div class="tech-grp">
+						<h3>Languages</h3>
+						<ul>
+							<li><i class="fab fa-html5"></i>HTML</li>
+							<li><i class="fab fa-css3"></i>CSS</li>
+							<li><i class="fab fa-js-square"></i>JavaScript</li>
+							<li><i class="fab fa-sass"></i>SASS</li>
+						</ul>
+					</div>
+					<div class="tech-grp">
+						<h3>Libraries & Frameworks</h3>
+						<ul>
+							<li><i class="fab fa-bootstrap"></i>Bootstrap</li>
+							<li>
+								<img
+									src="./images/jquery-icon.svg"
+									alt="jQuery logo"
+								/>jQuery
+							</li>
+						</ul>
+					</div>
+					<div class="tech-grp">
+						<h3>Tools</h3>
+						<ul>
+							<li><i class="fab fa-git-alt"></i>Git</li>
+							<li><i class="fab fa-figma"></i>Figma</li>
+						</ul>
+					</div>
+					<div class="tech-grp">
+						<h3>Currently Learning</h3>
+						<ul>
+							<li><i class="fab fa-react"></i>React</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="education container">
+				<div class="education-item">
+					<div class="education-item-img">
+						<img
+							src="./images/studying-img.JPG"
+							alt="study essentials"
+						/>
+					</div>
+					<div class="education-item-content">
+						<h3>
+							<i class="fas fa-graduation-cap"></i> BSc Computer
+							Games Technology (1st)
+						</h3>
+						<p>
+							In 2017 I graduated from Manchester Metropolitan
+							University with a first in computer games
+							technology. During my degree we learnt a wide range
+							of topics including; Web Development, Computer Games
+							Design, 3D Modelling and Programming. Although I
+							ultimately decided against a career in games
+							development, university definitely instilled in me
+							the ability to research and learn self sufficiently.
+						</p>
+					</div>
+				</div>
+				<div class="education-item">
+					<div class="education-item-img">
+						<img
+							src="./images/self-taught-img.jpg"
+							alt="laptop work area setup"
+						/>
+					</div>
+					<div class="education-item-content">
+						<h3><i class="far fa-lightbulb"></i> Self-taught</h3>
+						<p>
+							My university course only covered the basics of HTML
+							and CSS, so using those foundations I taught myself
+							through research and tutorials expanding on my
+							knowledge and putting them into practise. Going
+							forwards I think this would help with learning new
+							technologies as I have proven that I am capable of
+							putting in the time and dedication to expand my
+							knowledge and progress.
+						</p>
+					</div>
+				</div>
+			</section>
+			<div class="quote">
+				<blockquote>
+					All it needs is some time, a little bit of sunshine and
+					rain, and voila!
+				</blockquote>
+			</div>
+			<section id="work" class="work">
+				<h2 class="title-container">work</h2>
+				<p class="lead">
+					If you have a spare moment, feedback on my work is always
+					greatly appreciated!
+				</p>
+				<ul class="work-items">
+					<li class="work-item">
+						<h3>Blizzard Clone</h3>
+						<div class="work-item-content">
+							<p>
+								A clone of the Activison Blizzard website -
+								using HTML, CSS and JavaScript.
+							</p>
+							<div class="work-item-btns">
+								<a
+									href="https://blizzard-clone.netlify.app"
+									target="_blank"
+									rel="noopener"
+									>Live</a
+								>
+								<a
+									href="https://github.com/sadie-walker/Blizzard_Clone"
+									target="_blank"
+									rel="noopener"
+									>Github</a
+								>
+							</div>
+						</div>
+					</li>
+					<li class="work-item">
+						<h3>Film Watchlist</h3>
+						<div class="work-item-content">
+							<p>
+								A watchlist for current cinema releases and
+								existing films, using The Movie Databse API.
+								Created using HTML, BootStrap & JavaScript
+							</p>
+							<div class="work-item-btns">
+								<a
+									href="https://film-watchlist.netlify.app/"
+									target="_blank"
+									rel="noopener"
+									>Live
+								</a>
+								<a
+									href="https://github.com/sadie-walker/Film_Watchlist"
+									target="_blank"
+									rel="noopener"
+									>Github
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section id="contact" class="contact">
+				<h2 class="title-container">contact</h2>
+				<form name="contact" method="POST" data-netlify="true">
+					<div class="form-input-name">
+						<input
+							name="first-name"
+							type="text"
+							placeholder="First Name"
+							required
+						/>
+						<input
+							name="last-name"
+							type="text"
+							placeholder="Last Name"
+						/>
+					</div>
+					<input name="email" type="email" placeholder="Email" />
+					<input type="text" placeholder="Subject" />
+					<textarea
+						name="message"
+						cols="40"
+						rows="10"
+						placeholder="Enter message here..."
+						required
+					></textarea>
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+			<footer class="main-footer">
+				<div class="main-footer-contact">
+					<a
+						href="https://github.com/sadie-walker"
+						target="_blank"
+						rel="noopener"
+						><i class="fab fa-github"></i
+					></a>
+					<a
+						href="https://www.linkedin.com/in/sadiewalker313/"
+						target="_blank"
+						rel="noopener"
+						><i class="fab fa-linkedin-in"></i
+					></a>
+					<a
+						href="mailto:sadiewalker31@gamil.com"
+						target="_blank"
+						rel="noopener"
+						><i class="far fa-envelope"></i
+					></a>
+				</div>
+				<p>&copy;Sadie Walker <small>2021</small></p>
+			</footer>
+		</main>
+	</body>
 </html>
