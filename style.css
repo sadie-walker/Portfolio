@@ -580,6 +580,14 @@ a i:hover {
   background-color: #0e2a47;
 }
 
+.work-items .work-item:nth-of-type(3) {
+  background-image: url(/images/skate-uk.png);
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fffdfd;
+}
+
 .work-items .work-item:hover::before {
   top: 0;
   bottom: 0;
